@@ -386,6 +386,6 @@ in {
     environment.systemPackages = [
       cfg.package
     ];
-    services.displayManager.sddm.theme = "sddm-lain-wired-theme";
+    # services.displayManager.sddm.theme = "sddm-lain-wired-theme";
   };
 }

@@ -43,7 +43,7 @@ stdenvNoCC.mkDerivation rec {
   installPhase = ''
     local installDir=$out/share/sddm/themes/${pname}
     mkdir -p $installDir
-    cp -aR -t $installDir Main.qml Assets Components metadata.desktop theme.conf Backgrounds
+    cp -aR -t $installDir Main.qml metadata.desktop 
 
     # Applying theme
     cat "${themeConf}" > "$installDir/theme.conf"
